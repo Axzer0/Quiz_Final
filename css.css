@@ -22,3 +22,14 @@
     font-family: "Courier New", monospace;
 }
 
+.time{
+    display: none;
+    padding: 25px;
+    background-color: beige;
+    font-family: "Courier New", monospace;
+    width: 400px;
+}
+#no_timer1,#no_timer2,#no_timer3,#no_timer4,#timer1,#timer2,#timer3,#timer4{
+    display: none;
+}
+
