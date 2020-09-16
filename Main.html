@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div><h1>Quiz</h1></div>
+<hr>
+<div class="q_Stack" id="q1">
+    <h3>Question 1: Choose option a</h3>
+    <div>Time Remaining : 00</div>
+    <hr>
+    <div>
+        <button class="btn1" onclick="ans('a')">A. answer1</button>
+        <button class="btn2" onclick="ans('b')">B. answer2</button>
+    </div>
+    <div>
+        <button class="btn1" onclick="ans('c')">C. answer3</button>
+        <button class="btn2" onclick="ans('d')">D. answer4</button>
+    </div>
+</div>
+<div class="q_Stack" id="q2">
+    <h3>Question 2: Choose option b</h3><div>Time Remaining : 00</div><hr>
+    <div>
+        <button class="btn1" onclick="ans('a')">A. answer1</button>
+        <button class="btn2" onclick="ans('b')">B. answer2</button>
+    </div>
+    <div>
+        <button class="btn1" onclick="ans('c')">C. answer3</button>
+        <button class="btn2" onclick="ans('d')">D. answer4</button>
+    </div>
+</div>
+<div class="q_Stack" id="q3">
+    <h3>Question 3: Choose option c</h3><div>Time Remaining : 00</div><hr>
+    <div>
+        <button class="btn1" onclick="ans('a')">A. answer1</button>
+        <button class="btn2" onclick="ans('b')">B. answer2</button>
+    </div>
+    <div>
+        <button class="btn1" onclick="ans('c')">C. answer3</button>
+        <button class="btn2" onclick="ans('d')">D. answer4</button>
+    </div>
+</div>
+<div class="q_Stack" id="q4">
+    <div>
+        <h3>Question 4: Choose option d</h3><div>Time Remaining : 00</div><hr>
+        <div>
+            <button class="btn1" onclick="ans('a')">A. answer1</button>
+            <button class="btn2" onclick="ans('b')">B. answer2</button>
+        </div>
+        <div>
+            <button class="btn1" onclick="ans('c')">C. answer3</button>
+            <button class="btn2" onclick="ans('d')">D. answer4</button>
+        </div>
+    </div>
+</div>
+<div class="q_Stack"  style="display: block" id="start">
+    <div>
+        <h3>Pick Type</h3><hr>
+        <br>
+        <div>
+            <span>Panels Will Change After timeout:&nbsp;</span>
+            <button class="btn1">Timed</button>
+        </div>
+        <div>
+            <span>Panels will not change after time:&nbsp;&nbsp;</span>
+            <button class="btn1" onclick="next()">Not Timed</button>
+        </div>
+    </div>
+</div>
+<div class="resultPanel" id="end">
+    <h3>Results</h3>
+    <hr>
+    <div id="ans1">Q1 Selected Option: a, correct: +1</div><br>
+    <div id="ans2">Q2 Selected Option: b, incorrect: 0 [Correct Ans: a]</div><br>
+    <div id="ans3">Q3 Selected Option: n/a, correct: +1</div><br>
+    <div id="ans4">Q4 Selected Option: n/a, correct: +1</div><br>
+    <div id="res">Results : 4</div>
+    <hr>
+    <button class="btn1" onclick="reset()">Restart?</button>
+</div>
+
+
+</body>
+</html>
